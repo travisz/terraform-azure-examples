@@ -14,7 +14,7 @@ provider "azurerm" {
 ### Virtual Network
 module "network" {
   source                 = "./virtual-network"
-  network_name           = "sandbox-virtual-nnetwork"
+  network_name           = "sandbox-virtual-network"
   network_address_space  = "172.16.0.0/16"
   subnet_name            = "sandbox"
   region                 = "eastus2"
