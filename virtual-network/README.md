@@ -1,8 +1,6 @@
 # Virtual Network
 This creates the Virtual Network and Subnets within Azure.
 
-Make sure to review the `main.tf` file in the root of the repository and make any customizations needed to the variables being passed in.
-
 **NOTE**: Make sure to review variables.tf for some of the defaults related to the Storage Account
 
 ### Create vars file or entries in main.tf in root of repo
@@ -26,7 +24,7 @@ module "network" {
 
 **NOTE**: Make sure to modify any variables as needed.
 
-If you used the `remote-state` folder inn conjunction with the virtual-network, make sure to initialize your backend now!
+If you used the `remote-state` folder in conjunction with the `virtual-network`, make sure to initialize your backend now!
 
 ```
 terraform {
@@ -39,4 +37,4 @@ terraform {
 }
 ```
 
-**NOTE**: Make sure to replace the values with the output from remote-state.
+**NOTE**: Make sure to replace the values with the output from `remote-state`.
